@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Presentaciones y Charlas</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 2px solid #eaeaea;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .presentations {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .presentation-card {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .presentation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .presentation-card h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .tag {
+            background: #e5f2ff;
+            border-radius: 4px;
+            padding: 3px 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 0.8em;
+            color: #2980b9;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mis Presentaciones y Charlas</h1>
+        <p>Colección de presentaciones en formato Markdown usando Reveal.js</p>
+    </header>
+
+    <main>
+        <div class="presentations">
+            <!-- Ejemplo de una presentación -->
+            <div class="presentation-card">
+                <h3><a href="./go/">Introducción a go</a></h3>
+                <div class="date">Abril 2025</div>
+                <div class="tags">
+                    <span class="tag">go</span>
+                    <span class="tag">tutorial</span>
+                </div>
+                <p>Una guía completa sobre cómo usar Markdown para crear documentos y presentaciones efectivas.</p>
+                <a href="./presentacion1/">Ver presentación →</a>
+            </div>
+
+            <!-- Ejemplo de otra presentación -->
+            <div class="presentation-card">
+                <h3><a href="./distribuciones/">distribuciones</a></h3>
+                <div class="date">Marzo 2025</div>
+                <div class="tags">
+                    <span class="tag">timeLine</span>
+                    <span class="tag">distribuciones</span>
+                </div>
+                <p>Conceptos básicos de control de versiones con Git y GitHub para desarrolladores.</p>
+                <a href="./distribuciones/">Ver presentación →</a>
+            </div>
+
+            <!-- Puedes duplicar estos bloques para añadir más presentaciones -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Tu Nombre - <a href="https://github.com/draexx">GitHub</a></p>
+    </footer>
+</body>
+</html>
