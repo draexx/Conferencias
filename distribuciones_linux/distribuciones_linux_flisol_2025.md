@@ -1,7 +1,6 @@
 # Distribuciones Linux
 
 Presentación realizada en el **FLISoL Sucre - Abril 2025**.
-<section data-background="images/distro-bg.png"></section>
 ---
 
 ## Introducción
@@ -10,6 +9,7 @@ Presentación realizada en el **FLISoL Sucre - Abril 2025**.
 - Breve historia del software libre.
 - Importancia de las distribuciones Linux.
 
+<section data-background="images/distro-bg.png"></section>
 ---
 
 ## Principales Distribuciones Linux
