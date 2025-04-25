@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Presentación</title>
+  
+  <!-- Estilos de Reveal.js desde CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+  
+  <!-- Puedes cambiar el tema por otro de los disponibles: black, white, league, beige, sky, night, serif, simple, solarized, moon, blood -->
+  <!-- Por ejemplo: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.min.css"> -->
+  
+  <!-- Estilos personalizados adicionales (opcional) -->
+  <style>
+    .reveal section img {
+      border: none;
+      box-shadow: none;
+      max-height: 65vh;
+    }
+    
+    .reveal h1, .reveal h2, .reveal h3 {
+      margin-bottom: 0.6em;
+    }
+    
+    .reveal pre code {
+      max-height: 500px;
+      padding: 15px;
+    }
+    
+    /* Opcional: Agrega tu estilo personalizado aquí */
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Esta sección cargará tu archivo markdown -->
+      <section data-markdown="distribuciones_linux_flisol_2025.md"
+               data-separator="^\n---\n"
+               data-separator-vertical="^\n--\n"
+               data-separator-notes="^Note:"
+               data-charset="utf-8">
+      </section>
+    </div>
+  </div>
+
+  <!-- Scripts de Reveal.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/zoom/zoom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
+  
+  <!-- Inicialización de Reveal.js -->
+  <script>
+    Reveal.initialize({
+      // Configuración básica
+      width: 960,
+      height: 700,
+      margin: 0.1,
+      hash: true,  // Permite navegar con URLs con hash
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      
+      // Plugins activados
+      plugins: [
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes,
+        RevealZoom,
+        RevealMath.KaTeX
+      ],
+      
+      // Configuraciones adicionales
+      keyboard: {
+        13: 'next', // Enter
+        27: function() {}, // Escape (deshabilitado)
+        32: 'next', // Espacio
+        38: 'prev', // Flecha arriba
+        40: 'next'  // Flecha abajo
+      },
+      
+      // Vista general al presionar 'ESC'
+      overview: true
+    });
+  </script>
+  
+  <!-- Opcional: Link de regreso al índice de presentaciones -->
+  <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.5em;">
+    <a href="../">← Volver al índice de presentaciones</a>
+  </div>
+</body>
+</html>
