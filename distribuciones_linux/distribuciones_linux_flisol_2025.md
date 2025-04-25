@@ -1,6 +1,7 @@
 # Distribuciones Linux
 
 Presentación realizada en el **FLISoL Sucre - Abril 2025**.
+
 ---
 
 ## Introducción
@@ -9,7 +10,6 @@ Presentación realizada en el **FLISoL Sucre - Abril 2025**.
 - Breve historia del software libre.
 - Importancia de las distribuciones Linux.
 
-<section data-background="images/distro-bg.png"></section>
 ---
 
 ## Principales Distribuciones Linux
@@ -25,7 +25,7 @@ Presentación realizada en el **FLISoL Sucre - Abril 2025**.
 ### 3. Arch Linux
 - Filosofía "hazlo tú mismo".
 - Altamente personalizable.
-<section data-background="images/distro-bg.png"></section>
+
 ---
 
 ## Comparativa de Distribuciones
@@ -35,7 +35,7 @@ Presentación realizada en el **FLISoL Sucre - Abril 2025**.
 | Ubuntu       | ⭐⭐⭐⭐⭐           | ⭐⭐⭐⭐⭐    | ⭐⭐⭐⭐      |
 | Fedora       | ⭐⭐⭐⭐            | ⭐⭐⭐⭐     | ⭐⭐⭐⭐⭐     |
 | Arch Linux   | ⭐⭐⭐             | ⭐⭐⭐      | ⭐⭐⭐⭐⭐     |
-<section data-background="images/distro-bg.png"></section>
+
 ---
 
 ## Conclusión
@@ -43,7 +43,7 @@ Presentación realizada en el **FLISoL Sucre - Abril 2025**.
 - Linux ofrece opciones para todos los niveles de usuarios.
 - Participa en la comunidad y contribuye al software libre.
 - ¡Elige la distribución que mejor se adapte a tus necesidades!
-<section data-background="images/distro-bg.png"></section>
+
 ---
 
 ## Contacto
@@ -51,4 +51,3 @@ Presentación realizada en el **FLISoL Sucre - Abril 2025**.
 Si tienes preguntas, no dudes en contactarme:
 - **Correo:** drulas@gmail.com
 - **GitHub:** [Mi perfil](https://github.com/draexx)
-- <section data-background="images/distro-bg.png"></section>
