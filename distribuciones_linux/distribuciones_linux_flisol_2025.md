@@ -99,13 +99,13 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ## Comparativa de Distribuciones
 
-| Distribución | Facilidad de Uso | Estabilidad | Actualización | Personalización | Comunidad |
-|--------------|------------------|-------------|---------------|-----------------|-----------|
-| Ubuntu       | ⭐⭐⭐⭐⭐        | ⭐⭐⭐⭐      | ⭐⭐⭐         | ⭐⭐⭐          | ⭐⭐⭐⭐⭐    |
-| Fedora       | ⭐⭐⭐⭐          | ⭐⭐⭐⭐      | ⭐⭐⭐⭐⭐      | ⭐⭐⭐⭐        | ⭐⭐⭐⭐     |
-| Arch Linux   | ⭐⭐             | ⭐⭐⭐        | ⭐⭐⭐⭐⭐      | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐     |
-| Debian       | ⭐⭐⭐            | ⭐⭐⭐⭐⭐     | ⭐⭐           | ⭐⭐⭐          | ⭐⭐⭐⭐     |
-| Linux Mint   | ⭐⭐⭐⭐⭐        | ⭐⭐⭐⭐      | ⭐⭐⭐         | ⭐⭐⭐          | ⭐⭐⭐⭐     |
+| Distribución | Facilidad de Uso | Estabilidad | Actualización |
+|--------------|------------------|-------------|---------------|
+| Ubuntu       | ⭐⭐⭐⭐⭐        | ⭐⭐⭐⭐      | ⭐⭐⭐         |
+| Fedora       | ⭐⭐⭐⭐          | ⭐⭐⭐⭐      | ⭐⭐⭐⭐⭐      |
+| Arch Linux   | ⭐⭐             | ⭐⭐⭐        | ⭐⭐⭐⭐⭐      |
+| Debian       | ⭐⭐⭐            | ⭐⭐⭐⭐⭐     | ⭐⭐           |
+| Linux Mint   | ⭐⭐⭐⭐⭐        | ⭐⭐⭐⭐      | ⭐⭐⭐         |
 
 ---
 
@@ -131,9 +131,11 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ## Historia y evolución de las distribuciones Linux
 
-![Linux Distribution Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+Desde las primeras distribuciones como **Slackware** y **Debian**, el ecosistema Linux ha crecido hasta incluir cientos de distribuciones adaptadas a diferentes necesidades. Este crecimiento refleja la diversidad y la innovación constante en el mundo del software libre.
 
-Note: Explicar cómo las distribuciones han evolucionado desde las primeras como Slackware y Debian hasta la diversidad actual
+➡️ [**Ver el timeline completo**](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg){:target="_blank"}
+
+Note: Explica brevemente cómo las distribuciones han evolucionado y menciona algunos hitos importantes.
 
 ---
 
