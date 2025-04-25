@@ -1,7 +1,7 @@
 # Distribuciones Linux
 
 Presentación realizada en el **FLISoL Sucre - Abril 2025**.
-
+<section data-background="images/distro-bg.png"></section>
 ---
 
 ## Introducción
