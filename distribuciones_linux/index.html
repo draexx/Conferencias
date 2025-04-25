@@ -8,7 +8,7 @@
   <!-- Estilos de Reveal.js desde CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/moon.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/serif.min.css"> -->
   
   <!-- Puedes cambiar el tema por otro de los disponibles: black, white, league, beige, sky, night, serif, simple, solarized, moon, blood -->
@@ -89,6 +89,9 @@
       // Vista general al presionar 'ESC'
       overview: true
     });
+    document.querySelector('.reveal').style.backgroundImage = "url('images/distro-bg.png')";
+    document.querySelector('.reveal').style.backgroundSize = "cover";
+    document.querySelector('.reveal').style.backgroundPosition = "center";
   </script>
   
   <!-- Opcional: Link de regreso al índice de presentaciones -->
