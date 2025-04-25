@@ -60,7 +60,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ## Fedora
 
-![Fedora Logo](https://getfedora.org/static/images/fedora-logotext.png)
+![Fedora Logo](https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png)
 
 - **Origen**: 2003, patrocinada por Red Hat
 - **Fortalezas**:
@@ -133,7 +133,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 Desde las primeras distribuciones como **Slackware** y **Debian**, el ecosistema Linux ha crecido hasta incluir cientos de distribuciones adaptadas a diferentes necesidades. Este crecimiento refleja la diversidad y la innovación constante en el mundo del software libre.
 
-➡️ [**Ver el timeline completo**](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg){:target="_blank"}
+<a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg" target="_blank">➡️ <strong>Ver el timeline completo</strong></a>
 
 Note: Explica brevemente cómo las distribuciones han evolucionado y menciona algunos hitos importantes.
 
