@@ -43,7 +43,7 @@
     <img src="images/logo-sl.png" alt="Logo" style="height: 150px;">
   </div>
   <div style="position: fixed; top: 0px; right: 0px; z-index: 100;">
-    <img src="images/title-slide.png" alt="Title-alt" style="height: 120px;" class="title-slide-img">
+    <img src="images/title-slide.png" alt="Title-alt" style="height: 100px;" class="title-slide-img">
   </div>
   <style>
     @media (max-width: 768px) {
@@ -83,6 +83,7 @@
       transition: 'convex', // Cambia a 'fade', 'zoom', 'slide', etc.
       slideNumber: 'print', // muestra el numero cuando se imprime
       pdfMaxPagePerSlide: 1, // maximo de paginas por slide al exportar a PDF
+      pdfSeparateFragments: false, // separa los fragmentos al exportar a PDF
 
       // Plugins activados
       plugins: [
