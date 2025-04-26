@@ -43,8 +43,15 @@
     <img src="images/logo-sl.png" alt="Logo" style="height: 150px;">
   </div>
   <div style="position: fixed; top: 0px; right: 0px; z-index: 100;">
-    <img src="images/title-slide.png" alt="Title-alt" style="height: 120px;">
+    <img src="images/title-slide.png" alt="Title-alt" style="height: 120px;" class="title-slide-img">
   </div>
+  <style>
+    @media (max-width: 768px) {
+      .title-slide-img {
+        height: 60px; /* Reduce el alto solo para dispositivos móviles */
+      }
+    }
+  </style>
   <div class="reveal">
     <div class="slides">
       <!-- Esta sección cargará tu archivo markdown -->

@@ -45,7 +45,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Ubuntu <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="Ubuntu Logo" style="height: 200px;">
+## <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="Ubuntu Logo" style="height: 200px;">
 
 - **Origen**: 2004, fundada por Mark Shuttleworth
 - **Fortalezas**: 
@@ -56,7 +56,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Fedora <img src="https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png" alt="Fedora Logo" style="height: 200px;">
+## <img src="https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png" alt="Fedora Logo" style="height: 200px;">
 
 - **Origen**: 2003, patrocinada por Red Hat
 - **Fortalezas**:
@@ -67,7 +67,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Arch Linux <img src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png" alt="Arch Logo" style="height: 200px;">
+## <img src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png" alt="Arch Logo" style="height: 200px;">
 
 - **Origen**: 2002, creada por Judd Vinet
 - **Fortalezas**:
@@ -78,7 +78,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Debian <img src="https://www.debian.org/logos/openlogo-nd-100.png" alt="Debian Logo" style="height: 200px;">
+## <img src="https://www.debian.org/logos/openlogo-nd-100.png" alt="Debian Logo" style="height: 200px;">
 
 - **Origen**: 1993, el proyecto de software libre más antiguo
 - **Fortalezas**:
@@ -185,9 +185,10 @@ Note: Explica brevemente cómo las distribuciones han evolucionado y menciona al
 
 Si tienes preguntas, no dudes en contactarme:
 
-- **Correo:** drulas@gmail.com
+- **Correo:** drulas@gmail.com, skoger@gmail.com
 - **GitHub:** [Mi perfil](https://github.com/draexx)
-- **Telegram:** @draexx
+- **Telegram:** @Draexx, @RogerBarja
+- **Sitio web:** [IT Group Systems](http://www.itgroup.systems)
 
 ---
 
