@@ -45,9 +45,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Ubuntu
-
-![Ubuntu Logo](https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png)
+## Ubuntu ![Ubuntu Logo](https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png)
 
 - **Origen**: 2004, fundada por Mark Shuttleworth
 - **Fortalezas**: 
