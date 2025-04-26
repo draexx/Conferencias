@@ -42,8 +42,8 @@
   <div style="position: fixed; bottom: 30px; left: 30px; z-index: 100;">
     <img src="images/logo-sl.png" alt="Logo" style="height: 150px;">
   </div>
-  <div style="position: fixed; top: 30px; right: 30px; z-index: 100;">
-    <img src="images/title-slide.png" alt="Title-alt" style="height: 75px;">
+  <div style="position: fixed; top: 0px; right: 0px; z-index: 100;">
+    <img src="images/title-slide.png" alt="Title-alt" style="height: 120px;">
   </div>
   <div class="reveal">
     <div class="slides">
@@ -74,7 +74,9 @@
       margin: 0.1,
       hash: true,  // Permite navegar con URLs con hash
       transition: 'convex', // Cambia a 'fade', 'zoom', 'slide', etc.
-      
+      slideNumber: 'print', // muestra el numero cuando se imprime
+      pdfMaxPagePerSlide: 1, // maximo de paginas por slide al exportar a PDF
+
       // Plugins activados
       plugins: [
         RevealMarkdown,

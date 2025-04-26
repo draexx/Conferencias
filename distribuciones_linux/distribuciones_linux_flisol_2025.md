@@ -45,7 +45,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Ubuntu ![Ubuntu Logo](https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png)
+## Ubuntu <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="Ubuntu Logo" style="height: 200px;">
 
 - **Origen**: 2004, fundada por Mark Shuttleworth
 - **Fortalezas**: 
@@ -56,9 +56,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Fedora
-
-![Fedora Logo](https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png)
+## Fedora <img src="https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png" alt="Fedora Logo" style="height: 200px;">
 
 - **Origen**: 2003, patrocinada por Red Hat
 - **Fortalezas**:
@@ -69,9 +67,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Arch Linux
-
-![Arch Logo](https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png)
+## Arch Linux <img src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png" alt="Arch Logo" style="height: 200px;">
 
 - **Origen**: 2002, creada por Judd Vinet
 - **Fortalezas**:
@@ -82,9 +78,7 @@ Note: Mencionar la importancia de Richard Stallman y el proyecto GNU
 
 ---
 
-## Debian
-
-![Debian Logo](https://www.debian.org/logos/openlogo-nd-100.png)
+## Debian <img src="https://www.debian.org/logos/openlogo-nd-100.png" alt="Debian Logo" style="height: 200px;">
 
 - **Origen**: 1993, el proyecto de software libre más antiguo
 - **Fortalezas**:
