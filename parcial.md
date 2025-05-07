@@ -79,7 +79,7 @@ def calculadora_rpn(expresion):
 # Ejemplos de uso
 print(calculadora_rpn("3 4 +"))          # Debe devolver 7
 print(calculadora_rpn("5 3 4 + *"))      # Debe devolver 35
-print(calculadora_rpn("10 6 9 3 + - *")) # Debe devolver 0
+print(calculadora_rpn("10 6 9 3 + - *")) # Debe devolver -60
 ```
 
 ---
