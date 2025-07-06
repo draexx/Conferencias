@@ -1,6 +1,13 @@
 # Conferencias
 
-Bienvenido al repositorio de **Conferencias**. Aquí encontrarás recursos y materiales relacionados con las presentaciones realizadas.
+Bienvenido al repositorio de **Conferencias**, un espacio centralizado para acceder a diversas presentaciones y charlas sobre tecnología. Este proyecto organiza y proporciona acceso fácil a los materiales de conferencias pasadas.
+
+---
+
+## 🌐 Página Web de Presentaciones
+Puedes explorar todas las presentaciones de forma interactiva a través de nuestra página principal:
+
+➡️ [**Ver Página de Presentaciones**](index.html)
 
 ---
 
@@ -40,7 +47,9 @@ Puedes ver la presentación en formato Markdown desde el siguiente enlace:
 
 ## 📂 Estructura del Proyecto
 - **`go/`**: Contiene los archivos relacionados con la presentación "Go! Conociendo una Alternativa".
-- **`linux/`**: Contiene los archivos relacionados con la presentación "Distribuciones Linux".
+- **`distribuciones_linux/`**: Contiene los archivos relacionados con la presentación "Distribuciones Linux".
+- **`utils/`**: Alberga recursos de diseño y plantillas gráficas.
+- **`index.html`**: Página principal que lista todas las presentaciones.
 - **`README.md`**: Este archivo, que describe el contenido del repositorio.
 
 ---
