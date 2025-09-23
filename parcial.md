@@ -1,7 +1,5 @@
 # **EXAMEN PARCIAL: RECURSIVIDAD Y ÁRBOLES**
 
-## **Instrucciones Generales:**
-
 ---
 
 ## **Sección 1: Preguntas Teóricas (30 puntos)**
