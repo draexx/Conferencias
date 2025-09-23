@@ -1,30 +1,26 @@
 # **EXAMEN PARCIAL: RECURSIVIDAD Y ÁRBOLES**
 
 ## **Instrucciones Generales:**
-- **Duración:** 2 horas
-- **Modalidad:** Individual, en plataforma SAETA
-- **Intento único:** Habilitado por 24 horas una vez iniciado
-- **Puntaje total:** 50 puntos
 
 ---
 
-## **Sección 1: Preguntas Teóricas (15 puntos)**
+## **Sección 1: Preguntas Teóricas (30 puntos)**
 
-### **Pregunta 1: Recursividad (5 puntos)**
+### **Pregunta 1: Recursividad (10 puntos)**
 **a)** Defina qué es un **caso base** en recursión y por qué es esencial.
 
 **b)** Explique la diferencia entre **recursión directa** e **indirecta** con ejemplos.
 
 **c)** ¿Cuándo es preferible usar recursión sobre iteración? Mencione 2 casos.
 
-### **Pregunta 2: Árboles Binarios (5 puntos)**
+### **Pregunta 2: Árboles Binarios (10 puntos)**
 **a)** Describa las **propiedades fundamentales** de un Árbol Binario de Búsqueda.
 
 **b)** Explique los **tres casos de eliminación** en un ABB.
 
 **c)** Compare **BFS vs DFS** en términos de complejidad espacial y aplicaciones.
 
-### **Pregunta 3: Análisis de Código (5 puntos)**
+### **Pregunta 3: Análisis de Código (10 puntos)**
 Analice el siguiente código recursivo:
 ```python
 def misterio(n):
@@ -40,9 +36,9 @@ def misterio(n):
 
 ---
 
-## **Sección 2: Problemas Prácticos (35 puntos)**
+## **Sección 2: Problemas Prácticos (70 puntos)**
 
-### **Problema 1: Recursividad (15 puntos)**
+### **Problema 1: Recursividad (35 puntos)**
 Implementar una función recursiva `camino_labertinto(matriz, inicio, fin)` que encuentre un camino en un laberinto representado como matriz:
 
 - `0`: camino libre
@@ -61,7 +57,7 @@ inicio = (0, 0)
 fin = (3, 3)
 ```
 
-### **Problema 2: Árboles Binarios (20 puntos)**
+### **Problema 2: Árboles Binarios (35 puntos)**
 Implementar una clase `ArbolExpresion` que construya y evalúe **expresiones aritméticas** usando árboles binarios.
 
 **Requisitos:**
