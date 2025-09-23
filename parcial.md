@@ -1,55 +1,89 @@
-### **Problema 1: Lista Enlazada Simple (40 pts)**  
-Implementa una función `eliminar_duplicados(lista)` que elimine nodos con valores repetidos en una lista simple.  
-- **Entrada:** `1 -> 3 -> 3 -> 2 -> 1`  
-- **Salida:** `1 -> 3 -> 2`  
+# **EXAMEN PARCIAL: RECURSIVIDAD Y ÁRBOLES**
 
-```python  
-class Nodo:  
-    def __init__(self, dato):  
-        self.dato = dato  
-        self.siguiente = None  
-
-def eliminar_duplicados(cabeza):  
-    # Completa este código  
-    pass  
-```  
-
-**Criterios:**  
-- Correctitud (25 pts).  
-- Eficiencia (15 pts): Usa un conjunto para O(n).  
+## **Instrucciones Generales:**
+- **Duración:** 2 horas
+- **Modalidad:** Individual, en plataforma SAETA
+- **Intento único:** Habilitado por 24 horas una vez iniciado
+- **Puntaje total:** 50 puntos
 
 ---
 
-#### **Problema 2: Lista Doblemente Enlazada (60 pts)**  
-Crea una clase `ListaDoble` que incluya:  
-1. **Métodos:**  
-   - `insertar_ordenado(dato)`: Inserta en orden ascendente.  
-   - `eliminar_rango(inicio, fin)`: Elimina nodos desde posición `inicio` hasta `fin`.  
-2. **Propiedades:**  
-   - `cabeza` y `cola` siempre actualizadas.  
+## **Sección 1: Preguntas Teóricas (15 puntos)**
 
-**Ejemplo:**  
-```python  
-lista = ListaDoble()  
-lista.insertar_ordenado(5)  
-lista.insertar_ordenado(1)  
-lista.insertar_ordenado(3)  
-# Lista: 1 <-> 3 <-> 5  
-lista.eliminar_rango(1, 2)  # Elimina posiciones 1 y 2  
-# Lista resultante: 1  
+### **Pregunta 1: Recursividad (5 puntos)**
+**a)** Defina qué es un **caso base** en recursión y por qué es esencial.
+
+**b)** Explique la diferencia entre **recursión directa** e **indirecta** con ejemplos.
+
+**c)** ¿Cuándo es preferible usar recursión sobre iteración? Mencione 2 casos.
+
+### **Pregunta 2: Árboles Binarios (5 puntos)**
+**a)** Describa las **propiedades fundamentales** de un Árbol Binario de Búsqueda.
+
+**b)** Explique los **tres casos de eliminación** en un ABB.
+
+**c)** Compare **BFS vs DFS** en términos de complejidad espacial y aplicaciones.
+
+### **Pregunta 3: Análisis de Código (5 puntos)**
+Analice el siguiente código recursivo:
+```python
+def misterio(n):
+    if n == 0:
+        return 1
+    else:
+        return n * misterio(n-1)
+```
+**Preguntas:**
+1. ¿Qué calcula esta función?
+2. ¿Cuál es su complejidad temporal?
+3. ¿Qué problema puede ocurrir para valores grandes de n?
+
+---
+
+## **Sección 2: Problemas Prácticos (35 puntos)**
+
+### **Problema 1: Recursividad (15 puntos)**
+Implementar una función recursiva `camino_labertinto(matriz, inicio, fin)` que encuentre un camino en un laberinto representado como matriz:
+
+- `0`: camino libre
+- `1`: pared
+- Retornar lista de coordenadas del camino o lista vacía si no hay solución
+
+**Matriz de ejemplo:**
+```python
+laberinto = [
+    [0, 1, 0, 0],
+    [0, 0, 0, 1],
+    [1, 0, 1, 0],
+    [0, 0, 0, 0]
+]
+inicio = (0, 0)
+fin = (3, 3)
 ```
 
-**Criterios:**  
-- Implementación correcta (40 pts).  
-- Manejo de errores (20 pts): Rangos inválidos.  
+### **Problema 2: Árboles Binarios (20 puntos)**
+Implementar una clase `ArbolExpresion` que construya y evalúe **expresiones aritméticas** usando árboles binarios.
 
----
+**Requisitos:**
+1. **Constructor:** `ArbolExpresion(expresion)` donde expresion es string como "(3 + 5) * 2"
+2. **Método `construir_arbol()`:** Parsear expresión y construir árbol
+3. **Método `evaluar()`:** Calcular resultado recursivamente
+4. **Método `mostrar_prefija()`:** Mostrar expresión en notación prefija
 
-### **Instrucciones Adicionales:**  
-- **Permitido:** Uso de documentos y código base proporcionado.  
-- **No permitido:** Copiar código de compañeros o internet.  
-- **Formato de entrega:** Archivo Python (`examen.py`) con las implementaciones y comentarios explicativos.  
+**Operadores soportados:** `+, -, *, /`
 
-**¡Buena suerte!**  
+**Ejemplo:**
+```python
+expresion = ArbolExpresion("(3 + 5) * 2")
+print(expresion.evaluar())        # 16
+print(expresion.mostrar_prefija()) # * + 3 5 2
+```
 
---- 
+**Estructura del árbol para "(3 + 5) * 2":**
+```
+      *
+     / \
+    +   2
+   / \
+  3   5
+```
