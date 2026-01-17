@@ -1,0 +1,16 @@
+{
+  "name": "conferencias",
+  "version": "1.0.0",
+  "description": "Sistema automatizado para generar el índice de presentaciones",
+  "scripts": {
+    "generate": "node generate-index.js",
+    "watch": "nodemon --watch . --ignore node_modules --exec 'node generate-index.js'"
+  },
+  "keywords": ["presentations", "automation"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
+

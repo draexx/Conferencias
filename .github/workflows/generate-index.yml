@@ -1,0 +1,58 @@
+name: Generate Index
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - '**/presentation.json'
+      - '**/index.html'
+      - 'generate-index.js'
+  workflow_dispatch: # Permite ejecutar manualmente
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necesario para hacer commit y push
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies (if any)
+        run: |
+          if [ -f package.json ]; then
+            npm ci || npm install
+          fi
+      
+      - name: Generate index.html
+        run: node generate-index.js
+      
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain index.html)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.html
+          git commit -m "Auto-generate index.html from presentation folders" || exit 0
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

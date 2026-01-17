@@ -59,5 +59,23 @@ En la carpeta [`utils`](utils/README.md) encontrarás recursos gráficos y plant
 
 ---
 
+---
+
+## 🤖 Automatización
+
+Este repositorio incluye un sistema automatizado que genera el `index.html` automáticamente cuando agregas nuevas presentaciones.
+
+### Cómo funciona
+
+1. Cada carpeta de presentación debe tener un archivo `presentation.json` con los metadatos
+2. El script `generate-index.js` escanea las carpetas y genera el HTML
+3. **GitHub Actions** ejecuta el script automáticamente cuando haces push
+
+Para más detalles, consulta:
+- [README-AUTOMATION.md](README-AUTOMATION.md) - Documentación del sistema
+- [README-GITHUB-PAGES.md](README-GITHUB-PAGES.md) - Configuración para GitHub Pages
+
+---
+
 ## 📬 Contacto
 Si tienes preguntas o comentarios, no dudes en contactarme.

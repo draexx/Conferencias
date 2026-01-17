@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go! Conociendo una Alternativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* === PALETA BITS A BOTS === */
+        :root {
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-code: 'Fira Code', monospace;
+
+            /* Principales */
+            --color-bits: #2a99c9;
+            --color-bots: #e9691e;
+            --color-navy: #0e3146;
+
+            /* Fondos */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-dark: #0a1e2b;
+
+            /* Textos */
+            --text-primary: #0e3146;
+            --text-secondary: #6c757d;
+            --text-muted: #adb5bd;
+
+            /* Bordes */
+            --border-light: #e9ecef;
+            --border-normal: #dee2e6;
+
+            /* Estados hover */
+            --bits-hover: #5bb3db;
+            --bots-hover: #f18b4a;
+            --navy-hover: #1a4d6b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            line-height: 1.7;
+            background-color: var(--color-navy);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .background-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: -2;
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: 0 0;
+        }
+        
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 8px 12px;
+            background-color: rgba(14, 49, 70, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-link:hover {
+            color: var(--color-bits);
+            background-color: rgba(14, 49, 70, 0.95);
+            border-color: var(--color-bits);
+        }
+        
+        .back-link svg {
+            width: 14px;
+            height: 14px;
+        }
+        
+        .pdf-viewer {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            background-color: #ffffff;
+        }
+        
+        @media (max-width: 768px) {
+            .back-link {
+                top: 10px;
+                left: 10px;
+                font-size: 0.7rem;
+                padding: 6px 10px;
+            }
+            
+            .back-link svg {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    
+    <a href="../index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Volver
+    </a>
+    
+    <iframe src="go_conociendo_una_alternativa.pdf" class="pdf-viewer" type="application/pdf">
+        <p>Tu navegador no puede mostrar PDFs. <a href="go_conociendo_una_alternativa.pdf" download>Descarga el PDF</a> para verlo.</p>
+    </iframe>
+</body>
+</html>
+
