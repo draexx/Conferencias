@@ -41,9 +41,8 @@ git push
    - Selecciona la carpeta `/ (root)`
 
 2. **Archivos necesarios** ya están incluidos:
-   - `package.json` - Configuración de dependencias
+   - `generate-index.js` - Script de automatización (no requiere dependencias externas)
    - `.github/workflows/generate-index.yml` - Workflow automatizado
-   - `package-lock.json` - Se genera automáticamente si no existe
 
 3. **No necesitas instalar nada** - GitHub Actions usa Node.js automáticamente
 

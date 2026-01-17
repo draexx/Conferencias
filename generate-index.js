@@ -133,15 +133,12 @@ function updateIndexHTML(presentations) {
     const cardsHTML = presentations.map(p => generatePresentationCard(p)).join('\n\n');
     
     // Buscar y reemplazar la sección de presentaciones usando regex
-    // Busca desde <div class="presentations"> hasta </div> que lo cierra
-    const regex = /(\s*<div class="presentations">)[\s\S]*?(<\/main>)/;
-    
+    // Busca desde <div class="presentations"> hasta </div> que viene antes de <footer>
+    const regex = /(<div class="presentations">)[\s\S]*?(<\/div>)(?=\s*<footer>)/;
+
     if (regex.test(indexContent)) {
-        indexContent = indexContent.replace(
-            regex,
-            `$1\n${cardsHTML}\n        </div>`
-        );
-        
+        indexContent = indexContent.replace(regex, `$1\n${cardsHTML}\n        </div>`);
+
         fs.writeFileSync(indexPath, indexContent, 'utf8');
         console.log('✅ index.html actualizado exitosamente');
         console.log(`📊 ${presentations.length} presentaciones encontradas`);
