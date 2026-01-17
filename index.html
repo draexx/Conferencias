@@ -52,7 +52,7 @@
             color: var(--text-primary);
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 20px 40px 20px;
         }
         
         header {
@@ -182,6 +182,78 @@
             color: var(--bits-hover);
         }
         
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: var(--color-navy);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+        
+        .navbar-brand:hover {
+            transform: scale(1.02);
+        }
+        
+        .navbar-logo {
+            height: 40px;
+            width: auto;
+        }
+        
+        .navbar-brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .navbar-brand-name {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+        }
+        
+        .navbar-brand-subtitle {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--color-bits);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+        
+        @media (min-width: 768px) {
+            .navbar-logo {
+                height: 48px;
+            }
+            
+            .navbar-brand-name {
+                font-size: 24px;
+            }
+            
+            .navbar-brand-subtitle {
+                font-size: 12px;
+            }
+        }
+        
         @media (max-width: 768px) {
             body {
                 padding: 24px 16px;
@@ -202,6 +274,18 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="https://pedrocarranza.com" class="navbar-brand" target="_blank" rel="noopener noreferrer">
+                <img src="https://pedrocarranza.com/pc-monogram-white.svg" alt="Logo Pedro Carranza" class="navbar-logo" onerror="this.style.display='none'">
+                <div class="navbar-brand-text">
+                    <span class="navbar-brand-name">PEDRO CARRANZA</span>
+                    <span class="navbar-brand-subtitle">Software Strategist</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+    
     <header>
         <h1>Presentaciones y Charlas</h1>
         <p>Colección de presentaciones y materiales de conferencias sobre tecnología, desarrollo y software libre.</p>
@@ -211,7 +295,7 @@
         <div class="presentations">
             <!-- Presentación: Go! Conociendo una Alternativa -->
             <div class="presentation-card">
-                <h3><a href="./go/go_conociendo_una_alternativa.pdf">Go! Conociendo una Alternativa</a></h3>
+                <h3>Go! Conociendo una Alternativa</h3>
                 <div class="date">Diciembre 2017</div>
                 <div class="tags">
                     <span class="tag">Go</span>
@@ -226,7 +310,7 @@
 
             <!-- Presentación: Distribuciones Linux -->
             <div class="presentation-card">
-                <h3><a href="./distribuciones_linux/index.html">Distribuciones Linux</a></h3>
+                <h3>Distribuciones Linux</h3>
                 <div class="date">Abril 2025</div>
                 <div class="tags">
                     <span class="tag">Linux</span>
