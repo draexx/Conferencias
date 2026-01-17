@@ -40,7 +40,10 @@ git push
    - Selecciona la rama `main` o `master`
    - Selecciona la carpeta `/ (root)`
 
-2. **El workflow de GitHub Actions** ya está configurado en `.github/workflows/generate-index.yml`
+2. **Archivos necesarios** ya están incluidos:
+   - `package.json` - Configuración de dependencias
+   - `package-lock.json` - Lock de dependencias (necesario para GitHub Actions)
+   - `.github/workflows/generate-index.yml` - Workflow automatizado
 
 3. **No necesitas instalar nada** - GitHub Actions usa Node.js automáticamente
 
@@ -51,11 +54,31 @@ Después de hacer push, puedes verificar:
 - Si hay cambios, se hará un commit automático
 - El sitio se actualizará en unos minutos
 
+## 🔧 Solución de Problemas
+
+### Error: "Dependencies lock file is not found"
+
+**Síntomas:** GitHub Actions falla con el mensaje "Dependencies lock file is not found in /home/runner/work/... Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock"
+
+**Solución:**
+1. Asegúrate de que `package-lock.json` esté en el repositorio
+2. Remueve `package-lock.json` del archivo `.gitignore` si está ahí
+3. Haz commit y push del archivo
+
+### Error: "Permission denied" o acceso denegado
+
+**Síntomas:** El workflow no puede hacer commit o push
+
+**Solución:**
+- Verifica que el workflow tenga los permisos correctos (contents: write)
+- Si usas ramas protegidas, configura las reglas para permitir que GitHub Actions haga push
+
 ## ⚠️ Notas Importantes
 
 - El script necesita acceso de escritura al repositorio (permissions en el workflow)
 - Si usas ramas protegidas, necesitarás ajustar los permisos
 - El commit automático aparecerá como "GitHub Action"
+- Asegúrate de que `package-lock.json` esté incluido en el repositorio (no en .gitignore)
 
 ## 🎯 Flujo de Trabajo Recomendado
 
