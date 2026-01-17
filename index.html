@@ -3,113 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Presentaciones y Charlas</title>
+    <title>Presentaciones y Charlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        /* === PALETA BITS A BOTS === */
+        :root {
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --font-code: 'Fira Code', monospace;
+
+            /* Principales */
+            --color-bits: #2a99c9;
+            --color-bots: #e9691e;
+            --color-navy: #0e3146;
+
+            /* Fondos */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-dark: #0a1e2b;
+
+            /* Textos */
+            --text-primary: #0e3146;
+            --text-secondary: #6c757d;
+            --text-muted: #adb5bd;
+
+            /* Bordes */
+            --border-light: #e9ecef;
+            --border-normal: #dee2e6;
+
+            /* Estados hover */
+            --bits-hover: #5bb3db;
+            --bots-hover: #f18b4a;
+            --navy-hover: #1a4d6b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            background-color: #1e1e1e; /* Fondo oscuro principal */
-            color: #e0e0e0; /* Texto principal claro */
-            max-width: 800px;
+            font-family: var(--font-body);
+            line-height: 1.7;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
+        
         header {
-            border-bottom: 2px solid #444; /* Borde oscuro */
-            margin-bottom: 30px;
-            padding-bottom: 10px;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-light);
         }
+        
         h1 {
-            color: #bb86fc; /* Color de acento para encabezado principal */
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-navy);
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
         }
+        
+        header p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+        }
+        
         .presentations {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
         }
+        
         .presentation-card {
-            background-color: #2c2c2c; /* Fondo oscuro para tarjetas */
-            border: 1px solid #3c3c3c; /* Borde sutil para tarjetas */
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra más pronunciada para tema oscuro */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-normal);
+            border-radius: 12px;
+            padding: 32px;
+            transition: all 0.2s ease;
+            position: relative;
         }
+        
         .presentation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Sombra hover más pronunciada */
+            border-color: var(--color-bits);
+            box-shadow: 0 4px 12px rgba(42, 153, 201, 0.12);
+            transform: translateY(-2px);
         }
+        
         .presentation-card h3 {
-            margin-top: 0;
-            color: #81d4fa; /* Color de acento para títulos de tarjeta */
+            font-family: var(--font-display);
+            margin: 0 0 12px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-navy);
+            line-height: 1.3;
         }
+        
         .presentation-card h3 a {
-            color: #81d4fa; /* Asegurar que el enlace herede el color */
+            color: var(--color-navy);
+            text-decoration: none;
+            transition: color 0.2s ease;
         }
+        
         .presentation-card h3 a:hover {
-            color: #b3e5fc; /* Color hover para enlaces de título de tarjeta */
+            color: var(--color-bits);
         }
+        
         .date {
-            color: #9e9e9e; /* Color de fecha más claro */
-            font-size: 0.9em;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 16px;
+            font-weight: 500;
         }
+        
         .tags {
             display: flex;
             flex-wrap: wrap;
-            margin: 10px 0;
+            gap: 8px;
+            margin-bottom: 16px;
         }
+        
         .tag {
-            background: #033b5e; /* Fondo oscuro para etiquetas */
-            border-radius: 4px;
-            padding: 3px 8px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            font-size: 0.8em;
-            color: #b3e5fc; /* Texto claro para etiquetas */
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-normal);
+            border-radius: 6px;
+            padding: 4px 12px;
+            font-size: 0.8125rem;
+            color: var(--text-primary);
+            font-weight: 500;
         }
+        
+        .presentation-card p {
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
         a {
-            color: #81d4fa; /* Color de enlace general */
+            color: var(--color-bits);
             text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9375rem;
+            transition: color 0.2s ease;
         }
+        
         a:hover {
+            color: var(--bits-hover);
             text-decoration: underline;
-            color: #b3e5fc; /* Color hover para enlaces generales */
         }
+        
         footer {
-            margin-top: 50px;
+            margin-top: 80px;
+            padding-top: 30px;
             text-align: center;
-            color: #9e9e9e; /* Color de texto de pie de página */
-            font-size: 0.9em;
-            border-top: 1px solid #444; /* Borde oscuro para pie de página */
-            padding-top: 20px;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border-light);
         }
+        
         footer a {
-            color: #81d4fa; /* Color de enlace en pie de página */
+            color: var(--color-bits);
         }
+        
         footer a:hover {
-            color: #b3e5fc; /* Color hover para enlace en pie de página */
+            color: var(--bits-hover);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 24px 16px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .presentation-card {
+                padding: 24px;
+            }
+            
+            .presentation-card h3 {
+                font-size: 1.25rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mis Presentaciones y Charlas</h1>
-        <p>Colección de presentaciones en formato Markdown usando Reveal.js</p>
+        <h1>Presentaciones y Charlas</h1>
+        <p>Colección de presentaciones y materiales de conferencias sobre tecnología, desarrollo y software libre.</p>
     </header>
 
     <main>
         <div class="presentations">
             <!-- Presentación: Go! Conociendo una Alternativa -->
             <div class="presentation-card">
-                <h3><a href="./go/">Go! Conociendo una Alternativa</a></h3>
+                <h3><a href="./go/go_conociendo_una_alternativa.pdf">Go! Conociendo una Alternativa</a></h3>
                 <div class="date">Diciembre 2017</div>
                 <div class="tags">
                     <span class="tag">Go</span>
                     <span class="tag">Introducción</span>
                 </div>
                 <p>Presentación sobre el lenguaje Go realizada en el GDG BootCamp. Explora las características principales del lenguaje y su ecosistema.</p>
-                <a href="./go/go_conociendo_una_alternativa.pdf">Ver presentación →</a> | 
-                <a href="./go/go_conociendo_una_alternativa.pdf" download>Descargar PDF</a>
+                <div class="links">
+                    <a href="./go/go_conociendo_una_alternativa.pdf">Ver presentación →</a>
+                    <a href="./go/go_conociendo_una_alternativa.pdf" download>Descargar PDF</a>
+                </div>
             </div>
 
             <!-- Presentación: Distribuciones Linux -->
@@ -122,14 +234,16 @@
                     <span class="tag">FLISoL</span>
                 </div>
                 <p>Exploración de las principales distribuciones Linux, presentada en el FLISoL Sucre 2025. Aprende sobre Ubuntu, Fedora, Arch Linux y más.</p>
-                <a href="./distribuciones_linux/index.html">Ver presentación →</a> |
-                <a href="./distribuciones_linux/distribuciones_linux_flisol_2025.pdf" download>Descargar PDF</a>
+                <div class="links">
+                    <a href="./distribuciones_linux/index.html">Ver presentación →</a>
+                    <a href="./distribuciones_linux/distribuciones_linux_flisol_2025.pdf" download>Descargar PDF</a>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>© 2025 Draexx - <a href="https://github.com/draexx">GitHub</a></p>
+        <p>© 2025 Draexx — <a href="https://github.com/draexx">GitHub</a></p>
     </footer>
 </body>
 </html>
