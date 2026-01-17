@@ -41,6 +41,8 @@ Para más detalles, consulta:
 - [README-AUTOMATION.md](README-AUTOMATION.md) - Documentación del sistema
 - [README-GITHUB-PAGES.md](README-GITHUB-PAGES.md) - Configuración para GitHub Pages
 
+**Nota:** El archivo `package-lock.json` se genera automáticamente por GitHub Actions.
+
 ---
 
 ## 📬 Contacto
