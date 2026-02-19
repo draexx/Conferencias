@@ -63,14 +63,36 @@
     * Instalación y extensiones esenciales.
     * Temas de color y familias de iconos (Material Icon).
     * Organización lógica de directorios de proyectos.
+📝 Distribución de las 2 Horas (Para Antigravity)
+00:00 - 00:20 | Teoría: Introducción al concepto de IDE y por qué VS Code es el estándar actual en Sistemas y Negocios.
 
+00:20 - 00:50 | Instalación Guiada: Asegurar que todos instalen la versión correcta y entiendan dónde se guardan los ejecutables.
+
+00:50 - 01:30 | Configuración de Entorno:
+
+Explicar el Marketplace de extensiones.
+
+Configurar el tema Dracula (les encanta este paso porque se ve "pro").
+
+Hacer el cambio en el settings.json para que vean que el editor es totalmente configurable.
+
+01:30 - 02:00 | La Primera Carpeta:
+
+Enseñar a abrir carpetas (no archivos sueltos).
+
+Explicar la estructura de directorios lógica para un estudiante.
 ### Sesión 4: Introducción a la Documentación Técnica (Markdown)
 * **Competencia:** Redacción estructurada mediante lenguajes de marcado ligero.
 * **Temario:**
     * Sintaxis Markdown (.md): Títulos, listas, enlaces y bloques de código.
     * Ventajas sobre procesadores de texto tradicionales.
 * **Actividad:** Creación de una bitácora académica en formato `.md`.
+### 📝 Distribución de las 2 Horas (Para Antigravity)
 
+1.  **00:00 - 00:20 | El "Por Qué":** Muestra un archivo de documentación en GitHub (como el de una librería famosa) para que vean el resultado final.
+2.  **00:20 - 00:50 | Práctica de Sintaxis:** Los alumnos deben replicar en sus pantallas lo que vas mostrando en la diapositiva.
+3.  **00:50 - 01:20 | Tablas y Enlaces:** Esta es la parte donde más se equivocan con los símbolos `|` y `-`. Ayuda personalizada en este bloque.
+4.  **01:20 - 02:00 | Proyecto Bitácora:** Inician la documentación de un proyecto real (puede ser una tarea de otra materia o un hobby como el Papercraft/3D).
 ### Sesión 5: Optimización del Flujo de Trabajo
 * **Competencia:** Uso eficiente de herramientas mediante atajos y automatización.
 * **Temario:**
