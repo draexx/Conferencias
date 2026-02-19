@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Sesión 2: Gestión de SAETA - TECBA</title>
-  <link rel="stylesheet" href="../../dist/reveal.css">
-  <link rel="stylesheet" href="../../dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
   <style>
     :root {
       --tecba-orange: #f26522;
@@ -111,9 +111,14 @@
     </div>
   </div>
 
-  <script src="../../dist/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
   <script>
-    Reveal.initialize({ hash: true, transition: 'fade' });
+    Reveal.initialize({
+      hash: true,
+      transition: 'fade',
+      plugins: [RevealHighlight]
+    });
   </script>
 </body>
 
