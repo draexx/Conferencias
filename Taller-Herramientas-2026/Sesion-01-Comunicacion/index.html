@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Sesión 1: Identidad y Comunicación - TECBA</title>
-  <link rel="stylesheet" href="../../dist/reveal.css">
-  <link rel="stylesheet" href="../../dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
   <style>
     :root {
       --tecba-orange: #f26522;
@@ -35,8 +35,7 @@
     <div class="slides">
 
       <section data-background-color="#1a1a1b">
-        <img src="https://tecba.edu.bo/wp-content/uploads/2021/01/logo-tecba-web.png" alt="TECBA Logo"
-          style="width: 300px; margin-bottom: 50px;">
+        <img src="../images/logotecba.png" alt="TECBA Logo" style="width: 300px; margin-bottom: 50px;">
         <h1>Sesión 1</h1>
         <h3>Configuración de Canales de Comunicación y Acceso Móvil</h3>
       </section>
@@ -87,16 +86,18 @@
   </div>
   <!-- Opcional: Link de regreso al índice de presentaciones -->
   <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.8em;">
-    <a href="../" style="text-decoration: none; color: #3498db;">
+    <a href="../../" style="text-decoration: none; color: #3498db;">
       <i class="fas fa-home"></i> Volver al índice de presentaciones
     </a>
   </div>
-  <script src="../../dist/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
       center: true,
-      transition: 'convex'
+      transition: 'convex',
+      plugins: [RevealHighlight]
     });
   </script>
 </body>
