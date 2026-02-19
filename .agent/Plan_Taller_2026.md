@@ -42,6 +42,15 @@
     * Arquitectura de Moodle: Recursos, Actividades y Bloques.
     * Estándares de entrega: Formatos (PDF), nomenclatura y límites de peso.
     * Herramientas asíncronas: Foros y Mensajería.
+    Distribución del Tiempo:
+
+00:00 - 00:20: Introducción a SAETA y login masivo (resolver problemas de acceso).
+
+00:20 - 00:50: Recorrido por la interfaz: cómo identificar tareas pendientes y descargar material.
+
+00:50 - 01:20: Explicación de los estándares. ¿Por qué PDF? ¿Cómo nombrar archivos? (Esto les ahorrará puntos en el futuro).
+
+01:20 - 02:00: Actividad Práctica. Deben generar un PDF simple (puede ser un "Hola Mundo" en Word guardado como PDF) y subirlo cumpliendo la nomenclatura.
 * **Actividad:** Personalización de perfil y entrega de prueba.
 
 ---
