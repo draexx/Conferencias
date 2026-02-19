@@ -1,65 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sesión 6: Fundamentos de Git</title>
-  
-  <!-- Estilos de Reveal.js desde CDN -->
+  <title>Sesión 6: Fundamentos de Git - TECBA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/league.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
   <style>
-    .reveal section img {
-      border: none;
-      box-shadow: none;
-      max-height: 65vh;
+    :root {
+      --tecba-orange: #f26522;
     }
-    .reveal h1, .reveal h2, .reveal h3 {
-      margin-bottom: 0.6em;
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      color: var(--tecba-orange);
     }
-    .reveal pre code {
-      max-height: 500px;
-      padding: 15px;
+
+    .highlight {
+      color: var(--tecba-orange);
+      font-weight: bold;
+    }
+
+    .git-process {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .step {
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid var(--tecba-orange);
+      width: 25%;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
   <div class="reveal">
     <div class="slides">
-      <section data-markdown="slides.md"
-               data-separator="^\n---\n"
-               data-separator-vertical="^\n--\n"
-               data-separator-notes="^Note:"
-               data-charset="utf-8">
+
+      <section data-background-color="#1a1a1b">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="150"
+          style="margin-bottom: 20px;">
+        <h1>Sesión 6</h1>
+        <h3>Git: Tu Máquina del Tiempo</h3>
+        <p>Fundamentos de Control de Versiones</p>
       </section>
+
+      <section>
+        <section>
+          <h2>1. ¿Qué es Git?</h2>
+          <p>No es una nube de archivos, es un registro de cambios.</p>
+        </section>
+        <section>
+          <h3>Adiós al Caos</h3>
+          <p>Olvídate de:</p>
+          <ul>
+            <li><code>proyecto_final.zip</code></li>
+            <li><code>proyecto_final_v2_este_si.zip</code></li>
+            <li><code>proyecto_editado_Pedro.zip</code></li>
+          </ul>
+          <p class="highlight">Git guarda "fotografías" de tu progreso.</p>
+        </section>
+        <section>
+          <h3>El Flujo Básico</h3>
+          <div class="git-process">
+            <div class="step">
+              <h4>Modificado</h4><small>Haces cambios</small>
+            </div>
+            <div class="step">
+              <h4>Preparado</h4><small>Seleccionas cambios</small>
+            </div>
+            <div class="step">
+              <h4>Confirmado</h4><small>Guardas foto (Commit)</small>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>2. GitHub Desktop</h2>
+          <p>Git sin necesidad de comandos (por ahora).</p>
+        </section>
+        <section>
+          <h3>¿Por qué empezar con GUI?</h3>
+          <ul>
+            <li>Visualización clara de las diferencias (Diffs).</li>
+            <li>Gestión de historial con un clic.</li>
+            <li>Reducción de errores de principiante.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Conceptos Clave</h3>
+          <ul>
+            <li><span class="highlight">Repository:</span> La carpeta del proyecto controlada por Git.</li>
+            <li><span class="highlight">Commit:</span> El mensaje descriptivo de lo que hiciste.</li>
+            <li><span class="highlight">History:</span> La lista de todos tus pasos hacia atrás.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>3. Mi Primer Repositorio</h2>
+        </section>
+        <section>
+          <h3>El Mensaje de Commit</h3>
+          <p>Un buen mensaje explica <strong>qué</strong> y <strong>por qué</strong>:</p>
+          <p style="background: #222; padding: 10px; border-radius: 5px; font-family: monospace;">
+            <span style="color: #50fa7b;">[BIEN]:</span> "Agrega tabla de sensores en bitácora"<br>
+            <span style="color: #ff5555;">[MAL]:</span> "cambios", "asdf", "terminado"
+          </p>
+        </section>
+      </section>
+
+      <section data-background-color="#f26522">
+        <h2 style="color: white;">Taller Práctico</h2>
+        <ol style="color: white; text-align: left;">
+          <li>Instalar <strong>GitHub Desktop</strong>.</li>
+          <li>Crear un repositorio local llamado <code>Taller-Herramientas</code>.</li>
+          <li>Mover tu archivo <code>BITACORA.md</code> a esa carpeta.</li>
+          <li>Realizar tu primer <strong>Commit</strong> con un mensaje descriptivo.</li>
+          <li>Hacer un cambio y ver cómo Git detecta la diferencia.</li>
+        </ol>
+      </section>
+
     </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/zoom/zoom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
-  
-  <script>
-    Reveal.initialize({
-      width: 960,
-      height: 700,
-      margin: 0.1,
-      hash: true,
-      transition: 'convex',
-      slideNumber: 'print',
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath.KaTeX ]
-    });
-  </script>
-  
+  <!-- Opcional: Link de regreso al índice de presentaciones -->
   <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.8em;">
-    <a href="../../" style="text-decoration: none; color: #3498db;">
-      <i class="fas fa-home"></i> Volver al índice
+    <a href="../" style="text-decoration: none; color: #3498db;">
+      <i class="fas fa-home"></i> Volver al índice de presentaciones
     </a>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+  <script>
+    Reveal.initialize({ hash: true, plugins: [RevealHighlight] });
+  </script>
 </body>
+
 </html>

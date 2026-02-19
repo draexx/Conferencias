@@ -1,65 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sesión 7: Perfil Profesional en GitHub</title>
-  
-  <!-- Estilos de Reveal.js desde CDN -->
+  <title>Sesión 7: Perfil Profesional en GitHub - TECBA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/league.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
   <style>
-    .reveal section img {
-      border: none;
-      box-shadow: none;
-      max-height: 65vh;
+    :root {
+      --tecba-orange: #f26522;
     }
-    .reveal h1, .reveal h2, .reveal h3 {
-      margin-bottom: 0.6em;
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      color: var(--tecba-orange);
     }
-    .reveal pre code {
-      max-height: 500px;
-      padding: 15px;
+
+    .highlight {
+      color: var(--tecba-orange);
+      font-weight: bold;
+    }
+
+    .github-box {
+      border: 2px solid #6e5494;
+      padding: 20px;
+      border-radius: 15px;
+      background: #181717;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
   <div class="reveal">
     <div class="slides">
-      <section data-markdown="slides.md"
-               data-separator="^\n---\n"
-               data-separator-vertical="^\n--\n"
-               data-separator-notes="^Note:"
-               data-charset="utf-8">
+
+      <section data-background-color="#1a1a1b">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="150"
+          style="filter: invert(1); margin-bottom: 20px;">
+        <h1>Sesión 7</h1>
+        <h3>Tu Portafolio en la Nube</h3>
+        <p>GitHub como Identidad Profesional</p>
       </section>
+
+      <section>
+        <section>
+          <h2>1. De Local a Global</h2>
+          <p>El concepto de <code>Push</code>.</p>
+        </section>
+        <section>
+          <h3>¿Qué es GitHub?</h3>
+          <ul>
+            <li><span class="highlight">Respaldo:</span> Tus proyectos están seguros ante fallos de hardware.</li>
+            <li><span class="highlight">Colaboración:</span> La base del Open Source.</li>
+            <li><span class="highlight">Currículum:</span> Tus contribuciones valen más que un papel.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>2. El Profile README</h2>
+          <p>Tu carta de presentación al mundo.</p>
+        </section>
+        <section>
+          <h3>El Repositorio Secreto</h3>
+          <div class="github-box">
+            <p>Crear un repo con el <strong>mismo nombre</strong> que tu usuario.</p>
+            <p><small>Ejemplo: github.com/pedro-carranza/pedro-carranza</small></p>
+          </div>
+        </section>
+        <section>
+          <h3>¿Qué incluir?</h3>
+          <ul>
+            <li><strong>Biografía:</strong> Quién eres y qué estás aprendiendo.</li>
+            <li><strong>Tech Stack:</strong> Iconos de las herramientas que manejas.</li>
+            <li><strong>Stats:</strong> Tus estadísticas de GitHub (GitHub Readme Stats).</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>3. Beneficios Estudiantiles</h2>
+        </section>
+        <section>
+          <h3>GitHub Student Developer Pack</h3>
+          <p>Usa tu correo <code>@tecba.edu.bo</code> para obtener:</p>
+          <ul>
+            <li>Copilot (IA para programar) gratis.</li>
+            <li>Créditos en nubes (Azure, AWS, DigitalOcean).</li>
+            <li>Dominios .me o .tech gratuitos.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section data-background-color="#f26522">
+        <h2 style="color: white;">Taller Práctico</h2>
+        <ol style="color: white; text-align: left;">
+          <li>Hacer <code>Publish</code> de tu repositorio local a GitHub.com.</li>
+          <li>Crear tu <strong>Special Repository</strong> (Username Profile).</li>
+          <li>Diseñar tu biografía usando el Markdown aprendido en la Sesión 4.</li>
+          <li>Solicitar el <strong>Student Developer Pack</strong> con el correo institucional.</li>
+        </ol>
+      </section>
+
     </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/zoom/zoom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
-  
-  <script>
-    Reveal.initialize({
-      width: 960,
-      height: 700,
-      margin: 0.1,
-      hash: true,
-      transition: 'convex',
-      slideNumber: 'print',
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath.KaTeX ]
-    });
-  </script>
-  
+  <!-- Opcional: Link de regreso al índice de presentaciones -->
   <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.8em;">
-    <a href="../../" style="text-decoration: none; color: #3498db;">
-      <i class="fas fa-home"></i> Volver al índice
+    <a href="../" style="text-decoration: none; color: #3498db;">
+      <i class="fas fa-home"></i> Volver al índice de presentaciones
     </a>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+  <script>
+    Reveal.initialize({ hash: true, plugins: [RevealHighlight] });
+  </script>
 </body>
+
 </html>
