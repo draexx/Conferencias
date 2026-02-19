@@ -1,0 +1,95 @@
+:root {
+    --tecba-orange: #f26522;
+    --tecba-dark: #1a1a1b;
+    --bg-light: #fdfdfd;
+    --text-gray: #444;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--tecba-dark);
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--tecba-dark);
+    border-bottom: 4px solid var(--tecba-orange);
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.sessions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.session-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 6px solid var(--tecba-orange);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.session-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(242, 101, 34, 0.15);
+}
+
+.session-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--tecba-dark);
+}
+
+.session-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.view-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--tecba-orange) !important;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-nav {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: var(--tecba-orange);
+}
+
+/* Estilo para los números de sesión */
+.session-number {
+    color: var(--tecba-orange);
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
