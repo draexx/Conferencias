@@ -99,7 +99,14 @@ Explicar la estructura de directorios lógica para un estudiante.
     * Atajos de teclado (Shortcuts) para edición rápida.
     * Extensiones de formateo automático (Formatters).
     * Uso de elementos visuales (Tablas y Emojis) en documentación.
+📝 Distribución de las 2 Horas (Para Antigravity)
+00:00 - 00:30 | Demo de Velocidad: Realiza una demostración en vivo de cómo crear un archivo, llenarlo con Markdown y formatearlo usando solo el teclado. Esto les vuela la cabeza.
 
+00:30 - 01:00 | Práctica de Atajos: Haz que repitan contigo los comandos de navegación. "Manos al teclado, mouse al suelo".
+
+01:00 - 01:30 | Configuración de Better Comments: Enseña cómo usar los comentarios para organizar sus tareas de estudio (ej. // TODO: Estudiar para el examen de cálculo).
+
+01:30 - 02:00 | El Reto de Velocidad: El ejercicio final de la diapositiva. Premia al primero que termine con un punto extra o reconocimiento.
 ---
 
 ## 🚀 MÓDULO 3: Introducción al Control de Versiones

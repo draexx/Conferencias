@@ -1,74 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller de Herramientas 2026 - TECBA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style.css">
+    <meta charset="utf-8">
+    <title>Sesión 8: Colaboración Pro - TECBA</title>
+    <link rel="stylesheet" href="../../dist/reveal.css">
+    <link rel="stylesheet" href="../../dist/theme/black.css">
+    <link rel="stylesheet" href="../../plugin/highlight/monokai.css">
+    <style>
+        :root {
+            --tecba-orange: #f26522;
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            color: var(--tecba-orange);
+        }
+
+        .highlight {
+            color: var(--tecba-orange);
+            font-weight: bold;
+        }
+
+        .issue-box {
+            border-left: 5px solid #28a745;
+            background: #222;
+            padding: 15px;
+            text-align: left;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Taller de Herramientas 2026</h1>
+    <div class="reveal">
+        <div class="slides">
 
-        <div class="sessions">
+            <section data-background-color="#1a1a1b">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg" width="100"
+                    style="filter: invert(1); opacity: 0.5;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg" width="100"
+                    style="filter: invert(1);">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg" width="100"
+                    style="filter: invert(1); opacity: 0.5;">
+                <h1>Sesión 8</h1>
+                <h3>Trabajo Colaborativo</h3>
+                <p>De Programador Solitario a Miembro de Equipo</p>
+            </section>
 
-            <div class="session-card">
-                <span class="session-number">MÓDULO 1</span>
-                <h3><a href="./Sesion-01-Comunicacion/index.html">Comunicación y Acceso Móvil</a></h3>
-                <a href="./Sesion-01-Comunicacion/index.html" class="view-link">Ver Presentación →</a>
-            </div>
+            <section>
+                <section>
+                    <h2>1. Conceptos de Colaboración</h2>
+                    <p>¿Cómo trabajamos 10 personas en el mismo código?</p>
+                </section>
+                <section>
+                    <h3>Pull Requests (PR)</h3>
+                    <p>Es la petición para que tus cambios sean revisados y aceptados en el proyecto principal.</p>
+                    <div class="highlight">Propón -> Revisa -> Mezcla (Merge)</div>
+                </section>
+                <section>
+                    <h3>Issues: El Corazón de la Gestión</h3>
+                    <div class="issue-box">
+                        <strong>#1 Bug:</strong> El sensor de proximidad no lee valores.
+                    </div>
+                    <div class="issue-box">
+                        <strong>#2 Feature:</strong> Añadir modo oscuro a la bitácora.
+                    </div>
+                    <p><small>Usamos Issues para organizar el trabajo pendiente.</small></p>
+                </section>
+            </section>
 
-            <div class="session-card">
-                <span class="session-number">MÓDULO 2</span>
-                <h3><a href="./Sesion-02-LMS/index.html">Gestión del Entorno Virtual (SAETA)</a></h3>
-                <a href="./Sesion-02-LMS/index.html" class="view-link">Ver Presentación →</a>
-            </div>
+            <section>
+                <h2>2. Filosofía Open Source</h2>
+                <ul>
+                    <li class="fragment"><strong>Fork:</strong> Copia un proyecto ajeno a tu cuenta.</li>
+                    <li><strong>Clone:</strong> Descárgalo a tu PC.</li>
+                    <li><strong>Contribute:</strong> Devuelve las mejoras al autor original.</li>
+                </ul>
+                <p class="fragment">¡Así se construyeron Linux, Arduino y VS Code!</p>
+            </section>
 
-            <div class="session-card">
-                <span class="session-number">MÓDULO 3</span>
-                <h3><a href="./Sesion-03-VSCode/index.html">Configuración del IDE (VS Code)</a></h3>
-                <a href="./Sesion-03-VSCode/index.html" class="view-link">Ver Presentación →</a>
-            </div>
+            <section data-background-color="#f26522">
+                <h2 style="color: white;">Reto Final: Gran Colaboración</h2>
+                <ol style="color: white; text-align: left;">
+                    <li>Entrar al repositorio central de la clase.</li>
+                    <li>Crear un <strong>Issue</strong> presentándote.</li>
+                    <li>Hacer un <strong>Fork</strong> del proyecto.</li>
+                    <li>Añadir tu nombre al archivo <code>ESTUDIANTES.md</code>.</li>
+                    <li>Enviar un <strong>Pull Request</strong> con tu cambio.</li>
+                </ol>
+            </section>
 
-            <div class="session-card">
-                <span class="session-number">MÓDULO 4</span>
-                <h3><a href="./Sesion-04-Markdown/index.html">Documentación Técnica (Markdown)</a></h3>
-                <a href="./Sesion-04-Markdown/index.html" class="view-link">Ver Presentación →</a>
-            </div>
-
-            <div class="session-card">
-                <span class="session-number">MÓDULO 5</span>
-                <h3><a href="./Sesion-05-Productividad/index.html">Flujo de Trabajo y Atajos</a></h3>
-                <a href="./Sesion-05-Productividad/index.html" class="view-link">Ver Presentación →</a>
-            </div>
-
-            <div class="session-card">
-                <span class="session-number">MÓDULO 6</span>
-                <h3><a href="./Sesion-06-Git/index.html">Fundamentos de Git</a></h3>
-                <a href="./Sesion-06-Git/index.html" class="view-link">Ver Presentación →</a>
-            </div>
-
-            <div class="session-card">
-                <span class="session-number">MÓDULO 7</span>
-                <h3><a href="./Sesion-07-GitHub-Profile/index.html">Perfil Profesional en GitHub</a></h3>
-                <a href="./Sesion-07-GitHub-Profile/index.html" class="view-link">Ver Presentación →</a>
-            </div>
-
-            <div class="session-card">
-                <span class="session-number">MÓDULO 8</span>
-                <h3><a href="./Sesion-08-Colaboracion/index.html">Gestión de Proyectos y Colaboración</a></h3>
-                <a href="./Sesion-08-Colaboracion/index.html" class="view-link">Ver Presentación →</a>
-            </div>
-
-        </div>
-
-        <div class="footer-nav">
-            <p><a href="../" class="back-link">← Volver al Portal de Conferencias</a></p>
         </div>
     </div>
+    <!-- Opcional: Link de regreso al índice de presentaciones -->
+    <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.8em;">
+        <a href="../" style="text-decoration: none; color: #3498db;">
+            <i class="fas fa-home"></i> Volver al índice de presentaciones
+        </a>
+    </div>
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({ hash: true, plugins: [RevealHighlight] });
+    </script>
 </body>
 
 </html>
