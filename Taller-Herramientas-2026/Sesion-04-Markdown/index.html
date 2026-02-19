@@ -1,65 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sesión 4: Introducción a la Documentación (Markdown)</title>
-  
-  <!-- Estilos de Reveal.js desde CDN -->
+  <title>Sesión 4: Markdown - TECBA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/league.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
   <style>
-    .reveal section img {
-      border: none;
-      box-shadow: none;
-      max-height: 65vh;
+    :root {
+      --tecba-orange: #f26522;
     }
-    .reveal h1, .reveal h2, .reveal h3 {
-      margin-bottom: 0.6em;
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      color: var(--tecba-orange);
     }
-    .reveal pre code {
-      max-height: 500px;
+
+    .highlight {
+      color: var(--tecba-orange);
+      font-weight: bold;
+    }
+
+    .preview-box {
+      background: #fdfdfd;
+      color: #333;
       padding: 15px;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      text-align: left;
+      font-size: 0.8em;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
   <div class="reveal">
     <div class="slides">
-      <section data-markdown="slides.md"
-               data-separator="^\n---\n"
-               data-separator-vertical="^\n--\n"
-               data-separator-notes="^Note:"
-               data-charset="utf-8">
+
+      <section data-background-color="#1a1a1b">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg" width="150"
+          style="filter: invert(1); margin-bottom: 20px;">
+        <h1>Sesión 4</h1>
+        <h3>Introducción a la Documentación Técnica</h3>
+        <p>El poder de <span class="highlight">Markdown (.md)</span></p>
       </section>
+
+      <section>
+        <section>
+          <h2>1. Word vs Markdown</h2>
+          <p>¿Por qué los perfiles técnicos no usan Word para documentar?</p>
+        </section>
+        <section>
+          <h3>Ventajas Clave</h3>
+          <ul>
+            <li><span class="highlight">Texto Plano:</span> Se lee en cualquier dispositivo.</li>
+            <li><span class="highlight">Versionable:</span> Ideal para trabajar con Git/GitHub.</li>
+            <li><span class="highlight">Enfoque:</span> Te concentras en el contenido, no en el diseño.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>2. Gramática Markdown</h2>
+          <p>Dominando los símbolos.</p>
+        </section>
+        <section>
+          <h3>Títulos y Énfasis</h3>
+          <pre><code class="language-markdown">
+# Título del Proyecto (H1)
+## Descripción (H2)
+### Materiales (H3)
+
+**Texto en negrita**
+*Texto en cursiva*
+~~Tachado~~
+                    </code></pre>
+        </section>
+        <section>
+          <h3>Listas y Tareas</h3>
+          <pre><code class="language-markdown">
+- [ ] Sensor Ultrasónico
+- [ ] Arduino Uno
+- [x] Cable USB
+
+1. Primer paso
+2. Segundo paso
+                    </code></pre>
+        </section>
+        <section>
+          <h3>Bloques de Código</h3>
+          <p>Indispensable para Sistemas:</p>
+          <pre><code class="language-markdown">
+```arduino
+void loop() {
+  digitalWrite(13, HIGH);
+}
+</code></pre>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>3. Tablas y Previsualización</h2>
+        </section>
+        <section>
+          <h3>Tablas de Parámetros</h3>
+          <pre><code class="language-markdown">
+| Componente | Precio | Stock |
+|------------|--------|-------|
+| Arduino    | $10    | 5     |
+| Sensor     | $2     | 20    |
+                </code></pre>
+        </section>
+        <section>
+          <h3>La Magia de la Previsualización</h3>
+          <div class="preview-box">
+            <h4>Resultado en Tiempo Real</h4>
+            <h1>Título del Proyecto</h1>
+            <p>Esto es texto normal.</p>
+            <p><strong>Negrita</strong>, <em>Cursiva</em>.</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section data-background-color="#f26522">
+        <h2 style="color: white;">Taller Práctico</h2>
+        <ol style="color: white; text-align: left;">
+          <li>Abre tu carpeta <code>Proyectos_TECBA</code> en VS Code.</li>
+          <li>Crea un archivo <code>README.md</code>.</li>
+          <li>Escribe tu nombre y la frase: "Mi primer documento técnico".</li>
+          <li>Usa `#` para el título y `**` para negrita.</li>
+          <li>Observa cómo cambia en la previsualización.</li>
+        </ol>
+      </section>
+
     </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/zoom/zoom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
-  
-  <script>
-    Reveal.initialize({
-      width: 960,
-      height: 700,
-      margin: 0.1,
-      hash: true,
-      transition: 'convex',
-      slideNumber: 'print',
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath.KaTeX ]
-    });
-  </script>
-  
+  <!-- Opcional: Link de regreso al índice de presentaciones -->
   <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.8em;">
-    <a href="../../" style="text-decoration: none; color: #3498db;">
-      <i class="fas fa-home"></i> Volver al índice
+    <a href="../" style="text-decoration: none; color: #3498db;">
+      <i class="fas fa-home"></i> Volver al índice de presentaciones
     </a>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+  <script>
+    Reveal.initialize({ hash: true, plugins: [RevealHighlight, RevealMarkdown] });
+  </script>
 </body>
+
 </html>

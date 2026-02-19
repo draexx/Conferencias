@@ -3,127 +3,116 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sesión 3: VS Code - Taller de Herramientas</title>
-    <!-- Use CDNs -->
+    <title>Sesión 3: VS Code - TECBA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-    <!-- Use a light theme as base for corporate branding -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/vs.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
     <style>
-        /* TECBA Branding Colors (Approximate based on typical academic Red/Blue) */
         :root {
-            --tecba-red: #C62828;
-            --tecba-blue: #1565C0;
-            --tecba-dark: #0D47A1;
+            --tecba-orange: #f26522;
         }
 
         .reveal h1,
         .reveal h2,
-        .reveal h3,
-        .reveal h4 {
-            color: var(--tecba-blue);
-            text-transform: uppercase;
+        .reveal h3 {
+            color: var(--tecba-orange);
         }
 
-        .reveal h1 {
-            border-bottom: 5px solid var(--tecba-red);
-            padding-bottom: 20px;
+        .highlight {
+            color: var(--tecba-orange);
+            font-weight: bold;
         }
 
-        .reveal .slides section .fragment.current-visible.visible:not(.current-fragment) {
-            display: none;
-            height: 0px;
-            line-height: 0px;
-            font-size: 0px;
-        }
-
-        /* Logo positioning */
-        #tecba-logo-header {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 150px;
-            z-index: 1000;
-        }
-
-        /* Helper for red accents */
-        .text-red {
-            color: var(--tecba-red);
-        }
-
-        .reveal section img {
-            background: none;
-            border: none;
-            box-shadow: none;
+        .code-box {
+            background: #282a36;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--tecba-orange);
         }
     </style>
 </head>
 
 <body>
-    <!-- Persistent Logo -->
-    <img id="tecba-logo-header" src="../../images/logotecba.png" alt="TECBA Logo">
-
     <div class="reveal">
         <div class="slides">
 
-            <!-- Title Slide -->
-            <section>
-                <h1>Sesión 3</h1>
-                <h3 class="text-red">Visual Studio Code (IDE)</h3>
-                <p>Configuración del "Centro de Mando" Digital</p>
+            <section data-background-color="#1a1a1b">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
-                    width="120" alt="VS Code Logo">
+                    width="120" style="margin-bottom: 20px;">
+                <h1>Sesión 3</h1>
+                <h3>Visual Studio Code: El Centro de Mando</h3>
+                <p>Configuración de Entornos de Desarrollo Modernos</p>
             </section>
 
             <section>
-                <h2>¿Por qué VS Code?</h2>
-                <ul>
-                    <li class="fragment">Es el estándar de la industria.</li>
-                    <li class="fragment">Multilenguaje (Arduino, Python, JS, Markdown).</li>
-                    <li class="fragment">Ecosistema de extensiones infinito.</li>
-                </ul>
+                <section>
+                    <h2>1. Más que un Editor de Texto</h2>
+                    <p>Diferencia entre Bloc de Notas, Word y VS Code.</p>
+                </section>
+                <section>
+                    <h3>¿Por qué VS Code?</h3>
+                    <ul>
+                        <li><span class="highlight">Ligero:</span> Funciona en casi cualquier laptop.</li>
+                        <li><span class="highlight">Extensible:</span> Se adapta a Arduino, Python, C++, etc.</li>
+                        <li><span class="highlight">Open Source:</span> Respaldado por una comunidad gigante.</li>
+                    </ul>
+                </section>
             </section>
 
             <section>
-                <h2>1. Estética y Legibilidad</h2>
-                <p>Instalación desde el Marketplace:</p>
-                <ul>
-                    <li><strong>Tema:</strong> Dracula Official</li>
-                    <li><strong>Iconos:</strong> Material Icon Theme</li>
-                </ul>
-                <p><small class="text-red">Tip: Los iconos nos ayudan a identificar archivos .ino (Arduino) y .stl (3D)
-                        de un vistazo.</small></p>
+                <section>
+                    <h2>2. Estética y Productividad</h2>
+                    <p>Un programador pasa 8h al día aquí. Hagámoslo cómodo.</p>
+                </section>
+                <section>
+                    <h3>Tema Dracula & Icons</h3>
+                    <p>Instalaremos la "Identidad Geek":</p>
+                    <div class="code-box">
+                        <ul>
+                            <li><strong>Dracula Official:</strong> Alto contraste, fatiga visual mínima.</li>
+                            <li><strong>Material Icon Theme:</strong> Reconoce archivos por icono (<code>.ino</code>,
+                                <code>.stl</code>, <code>.html</code>).
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h3>Settings JSON</h3>
+                    <p>Configuraremos el "Format on Save":</p>
+                    <pre><code class="language-json">
+{
+  "editor.formatOnSave": true,
+  "editor.fontSize": 16,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula"
+}
+                    </code></pre>
+                </section>
             </section>
 
             <section>
-                <h2>2. Extensiones de Supervivencia</h2>
-                <ol>
-                    <li><strong>Markdown All in One:</strong> Para bitácoras técnicas.</li>
-                    <li><strong>Prettier:</strong> Formateo automático de código.</li>
-                    <li><strong>Live Preview:</strong> Ver cambios en tiempo real.</li>
+                <section>
+                    <h2>3. Súper Poderes</h2>
+                    <p>Extensiones que usaremos en este taller:</p>
+                </section>
+                <section>
+                    <h3>El Kit de Supervivencia</h3>
+                    <ul>
+                        <li><strong>Markdown All in One:</strong> Para tus bitácoras.</li>
+                        <li><strong>Prettier:</strong> Para que tu código siempre esté ordenado.</li>
+                        <li><strong>Live Preview:</strong> Para ver cambios en HTML sin salir del editor.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section data-background-color="#f26522">
+                <h2 style="color: white;">Taller Práctico</h2>
+                <ol style="color: white; text-align: left;">
+                    <li>Instalar VS Code (User Installer).</li>
+                    <li>Aplicar el tema <strong>Dracula</strong> y <strong>Material Icons</strong>.</li>
+                    <li>Instalar <strong>Prettier</strong> y activar "Format on Save".</li>
+                    <li>Crear tu primera carpeta de proyecto: <code>Proyectos_TECBA</code>.</li>
                 </ol>
-            </section>
-
-            <section>
-                <h2>3. Configuración Pro</h2>
-                <p>Presiona <code>Ctrl + ,</code> y busca:</p>
-                <pre><code class="language-json">
-"editor.formatOnSave": true,
-"editor.fontSize": 16,
-"workbench.iconTheme": "material-icon-theme"
-                </code></pre>
-            </section>
-
-            <!-- Final Slide -->
-            <section data-background-gradient="linear-gradient(to bottom right, #1565C0, #0D47A1)">
-                <h2 style="color: white">Actividad Práctica</h2>
-                <div
-                    style="color: white; text-align: left; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
-                    <p>1. Instalar VS Code.</p>
-                    <p>2. Configurar el tema y los iconos.</p>
-                    <p>3. Crear la carpeta raíz: <code>Proyectos_TECBA</code>.</p>
-                </div>
             </section>
 
         </div>
@@ -134,16 +123,10 @@
             <i class="fas fa-home"></i> Volver al índice de presentaciones
         </a>
     </div>
-    <!-- Scripts from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
     <script>
-        Reveal.initialize({
-            hash: true,
-            transition: 'convex',
-            slideNumber: 'print',
-            plugins: [RevealHighlight]
-        });
+        Reveal.initialize({ hash: true, plugins: [RevealHighlight] });
     </script>
 </body>
 
