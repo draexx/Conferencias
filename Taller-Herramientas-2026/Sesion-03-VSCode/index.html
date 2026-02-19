@@ -128,13 +128,20 @@
 
         </div>
     </div>
-
+    <!-- Opcional: Link de regreso al índice de presentaciones -->
+    <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.8em;">
+        <a href="../" style="text-decoration: none; color: #3498db;">
+            <i class="fas fa-home"></i> Volver al índice de presentaciones
+        </a>
+    </div>
     <!-- Scripts from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
     <script>
         Reveal.initialize({
             hash: true,
+            transition: 'convex',
+            slideNumber: 'print',
             plugins: [RevealHighlight]
         });
     </script>
