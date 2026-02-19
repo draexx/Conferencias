@@ -1,0 +1,104 @@
+# 🛠️ Planificación: Taller de Herramientas y Gestión de Entornos Digitales
+**Contexto:** Capacitación de 8 sesiones (2h c/u) para Sistemas y Negocios Digitales.
+**Plataforma de Salida:** GitHub (draexx/Conferencias) -> Reveal.js (pedrocarranza.com)
+
+---
+
+## 📌 Estructura de Directorios Sugerida
+/Conferencias
+  /Taller-Herramientas-2026
+    ├── index.html (Presentación General)
+    ├── /Sesion-01-Comunicacion
+    ├── /Sesion-02-LMS
+    ├── /Sesion-03-VSCode
+    ├── /Sesion-04-Markdown
+    ├── /Sesion-05-Productividad
+    ├── /Sesion-06-Git
+    ├── /Sesion-07-GitHub-Profile
+    └── /Sesion-08-Colaboracion
+
+---
+
+# � Programa: Taller de Herramientas y Gestión de Entornos Digitales
+
+**Dirigido a:** Estudiantes de 1er Año (Sistemas Informáticos / Negocios Digitales)
+**Duración:** 8 Sesiones Prácticas (16 horas totales)
+**Objetivo General:** Capacitar en gestión de plataformas institucionales, entornos de desarrollo modernos, documentación técnica y control de versiones.
+
+---
+
+## 🏛️ MÓDULO 1: Gestión de Identidad y Plataformas Institucionales
+
+### Sesión 1: Comunicación y Acceso Móvil
+* **Competencia:** Gestión de correo corporativo y seguridad de accesos.
+* **Temario:**
+    * Protocolos institucionales (Correo vs. Mensajería informal).
+    * Sincronización de cuentas en dispositivos móviles.
+    * Navegación en el Portal del Estudiante (Área Personal).
+
+### Sesión 2: Gestión del Entorno Virtual (LMS - Moodle)
+* **Competencia:** Dominio técnico de la plataforma SAETA/Moodle.
+* **Temario:**
+    * Arquitectura de Moodle: Recursos, Actividades y Bloques.
+    * Estándares de entrega: Formatos (PDF), nomenclatura y límites de peso.
+    * Herramientas asíncronas: Foros y Mensajería.
+* **Actividad:** Personalización de perfil y entrega de prueba.
+
+---
+
+## 💻 MÓDULO 2: Entornos de Desarrollo y Documentación
+
+### Sesión 3: Configuración del IDE (Visual Studio Code)
+* **Competencia:** Personalización de entornos de trabajo profesionales.
+* **Temario:**
+    * Instalación y extensiones esenciales.
+    * Temas de color y familias de iconos (Material Icon).
+    * Organización lógica de directorios de proyectos.
+
+### Sesión 4: Introducción a la Documentación Técnica (Markdown)
+* **Competencia:** Redacción estructurada mediante lenguajes de marcado ligero.
+* **Temario:**
+    * Sintaxis Markdown (.md): Títulos, listas, enlaces y bloques de código.
+    * Ventajas sobre procesadores de texto tradicionales.
+* **Actividad:** Creación de una bitácora académica en formato `.md`.
+
+### Sesión 5: Optimización del Flujo de Trabajo
+* **Competencia:** Uso eficiente de herramientas mediante atajos y automatización.
+* **Temario:**
+    * Atajos de teclado (Shortcuts) para edición rápida.
+    * Extensiones de formateo automático (Formatters).
+    * Uso de elementos visuales (Tablas y Emojis) en documentación.
+
+---
+
+## 🚀 MÓDULO 3: Introducción al Control de Versiones
+
+### Sesión 6: Fundamentos de Git
+* **Competencia:** Comprensión del ciclo de vida de un archivo y respaldo.
+* **Temario:**
+    * Conceptos: Repositorio local, Commit y Push.
+    * Gestión mediante interfaz gráfica (GitHub Desktop / GitKraken).
+    * Buenas prácticas en el guardado de progresos.
+
+### Sesión 7: Perfil Profesional en GitHub
+* **Competencia:** Creación de identidad profesional técnica.
+* **Temario:**
+    * GitHub como portafolio profesional.
+    * Configuración de **Profile README**.
+    * Visibilidad de repositorios: Públicos vs. Privados.
+* **Actividad:** Despliegue de perfil con biografía y stack tecnológico.
+
+### Sesión 8: Trabajo Colaborativo y Gestión de Proyectos
+* **Competencia:** Interacción básica en proyectos y herramientas de seguimiento.
+* **Temario:**
+    * Estructura de proyectos Open Source.
+    * Sistema de seguimiento de incidencias (Issues).
+    * Flujo básico de colaboración.
+* **Actividad:** Creación de tickets y comentarios técnicos en repositorio central.
+
+---
+
+## 🛠️ Notas para Antigravity / Desarrollo
+- [ ] Generar los 8 `index.html` basados en la plantilla de Reveal.js de Pedro.
+- [ ] Asegurar que el script de `pedrocarranza.com` detecte la nueva subcarpeta.
+- [ ] Subir archivos base a GitHub para que los alumnos clonen.
