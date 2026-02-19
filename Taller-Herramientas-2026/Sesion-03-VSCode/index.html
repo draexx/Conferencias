@@ -1,65 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sesión 3: Configuración del IDE (VS Code)</title>
-  
-  <!-- Estilos de Reveal.js desde CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/league.min.css">
-  
-  <style>
-    .reveal section img {
-      border: none;
-      box-shadow: none;
-      max-height: 65vh;
-    }
-    .reveal h1, .reveal h2, .reveal h3 {
-      margin-bottom: 0.6em;
-    }
-    .reveal pre code {
-      max-height: 500px;
-      padding: 15px;
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="utf-8">
+    <title>Sesión 3: VS Code - Taller de Herramientas</title>
+    <!-- Use CDNs since local dist folder is missing -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
+    
+    <style>
+        .reveal section img { background: none; border: none; box-shadow: none; }
+    </style>
 </head>
 <body>
-  <div class="reveal">
-    <div class="slides">
-      <section data-markdown="slides.md"
-               data-separator="^\n---\n"
-               data-separator-vertical="^\n--\n"
-               data-separator-notes="^Note:"
-               data-charset="utf-8">
-      </section>
-    </div>
-  </div>
+    <div class="reveal">
+        <div class="slides">
+            
+            <section data-background-color="#282a36">
+                <h1>Sesión 3</h1>
+                <h3>Visual Studio Code (IDE)</h3>
+                <p>Configuración del "Centro de Mando" Digital</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="100" alt="VS Code Logo">
+            </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/zoom/zoom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
-  
-  <script>
-    Reveal.initialize({
-      width: 960,
-      height: 700,
-      margin: 0.1,
-      hash: true,
-      transition: 'convex',
-      slideNumber: 'print',
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealMath.KaTeX ]
-    });
-  </script>
-  
-  <div style="position: fixed; bottom: 10px; left: 10px; z-index: 100; font-size: 0.8em;">
-    <a href="../../" style="text-decoration: none; color: #3498db;">
-      <i class="fas fa-home"></i> Volver al índice
-    </a>
-  </div>
+            <section>
+                <h2>¿Por qué VS Code?</h2>
+                <ul>
+                    <li class="fragment">Es el estándar de la industria.</li>
+                    <li class="fragment">Multilenguaje (Arduino, Python, JS, Markdown).</li>
+                    <li class="fragment">Ecosistema de extensiones infinito.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>1. Estética y Legibilidad</h2>
+                <p>Instalación desde el Marketplace:</p>
+                <ul>
+                    <li><strong>Tema:</strong> Dracula Official</li>
+                    <li><strong>Iconos:</strong> Material Icon Theme</li>
+                </ul>
+                <p><small>Tip: Los iconos nos ayudan a identificar archivos .ino (Arduino) y .stl (3D) de un vistazo.</small></p>
+            </section>
+
+            <section>
+                <h2>2. Extensiones de Supervivencia</h2>
+                <ol>
+                    <li><strong>Markdown All in One:</strong> Para bitácoras técnicas.</li>
+                    <li><strong>Prettier:</strong> Formateo automático de código.</li>
+                    <li><strong>Live Preview:</strong> Ver cambios en tiempo real.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>3. Configuración Pro</h2>
+                <p>Presiona <code>Ctrl + ,</code> y busca:</p>
+                <pre><code class="language-json">
+"editor.formatOnSave": true,
+"editor.fontSize": 16,
+"workbench.iconTheme": "material-icon-theme"
+                </code></pre>
+            </section>
+
+            <section data-background-color="#44475a">
+                <h2>Actividad Práctica</h2>
+                <p>1. Instalar VS Code.</p>
+                <p>2. Configurar el tema y los iconos.</p>
+                <p>3. Crear la carpeta raíz: <code>Proyectos_TECBA</code>.</p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Scripts from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealHighlight ]
+        });
+    </script>
 </body>
 </html>
